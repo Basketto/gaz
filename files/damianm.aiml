@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
-	<!--test-->
+
+<category>
+    <pattern>DzieÅ dobry</pattern>
+    
+        <template>Witaj
+<delay>3</delay>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol></template>
+     
+
+
+</category>
+
+<category><pattern>dobry</pattern><template><srai>DZIEÅ DOBRY</srai></template></category>
+<category><pattern>witaj czesc</pattern><template><srai>DZIEÅ DOBRY</srai></template></category>
+<category><pattern>siema</pattern><template><srai>DZIEÅ DOBRY</srai></template></category>
+
+    
+
 </aiml>
