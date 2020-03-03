@@ -4,7 +4,8 @@
     <postback>_</postback>
     <pattern>_</pattern> <!-- Polecenie inicjalizujÄce bota -->
     <delay>1</delay>
-    <template>Witaj nazywam siÄ Gaz.
+    <template>
+        Witaj nazywam siÄ Gaz ð ð.
     <delay>1</delay>
     W czym mogÄ pomÃ³c?
     <delay>1</delay>
@@ -13,16 +14,20 @@
         <postback>CHOOSEADRES</postback>
     </reply>
     <reply>
-        <text>Informacje o zamÃ³wieniu</text>
-        <postback>CHOOSEZAMOWIENIE</postback>
-    </reply>
-    <reply>
         <text>Organizujesz przyjÄcie?</text>
         <postback>CHOOSEPRZYJECIE</postback>
     </reply>
     <reply>
-        <text>Informacje o zamÃ³wieniu</text>
-        <postback>CHOOSEZAMOWIENIE</postback>
+        <text>Kontakt z czÅowiekiem</text>
+        <postback>CHOOSECZLOWIEK</postback>
+    </reply>
+     <reply>
+        <text>Oferta</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+     <reply>
+        <text>Promocje</text>
+        <postback>CHOOSECZLOWIEK</postback>
     </reply>
     
     </template>
