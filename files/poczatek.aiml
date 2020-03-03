@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>Zaczynamy</pattern> <!-- Polecenie inicjalizujÄce bota -->
+    <template>Witaj nazywam siÄ gaz, w czym mogÄ pomÃ³c?
+    
+    <button>
+        <text>Dane adresowe</text>
+        <postback>ADRES</postback>
+    </button>
+    <reply>
+        <text>Informacje o zamÃ³wieniu</text>
+        <postback>ZAMOWIENIE</postback>
+    </reply>
+    </template>
+    
+</category>
+</aiml>
