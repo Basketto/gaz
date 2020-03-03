@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 <category>
-    <postback>_</postback>
-    <pattern>_</pattern> <!-- Polecenie inicjalizujÄce bota -->
+   
+    <pattern>a</pattern> <!-- Polecenie inicjalizujÄce bota -->
     <delay>1</delay>
     <template>
         Witaj nazywam siÄ Gaz ð ð.
@@ -27,16 +27,71 @@
     </reply>
      <reply>
         <text>Promocje</text>
-        <postback>CHOOSECZLOWIEK</postback>
+        <postback>CHOOSEPROMO</postback>
     </reply>
-    
+    </template>
+</category>
+
+<category>
+    <pattern>CHOOSEOFERTA</pattern>
+    <template>
+        <delay>1</delay>
+        Oferujemy szerokÄ gamÄ wyrobÃ³w cukierniczych!
+        <delay>1</delay>
+        Wpisz po prostu to czego szukasz lub moÅ¼e ja Tobie pomogÄ?
+        <reply>
+        <text>PomÃ³Å¼ mi!</text>
+        <postback>CHOOSEHELPER</postback>
+    </reply> 
+    </template>
+</category>
+
+<category>
+    <pattern>CHOOSEHELPER</pattern>
+    <template>
+        <delay>1</delay>
+        Jaki smak lubisz?
+        <delay>1</delay>
+          <reply>
+        <text>Czekolada</text>
+        <postback>CHOOSECHK</postback>
+    </reply>
+     <reply>
+        <text>Truskawk</text>
+        <postback>CHOOSECHK</postback>
+    </reply>
+              <reply>
+        <text>Czekolada</text>
+        <postback>CHOOSECHK</postback>
+    </reply>
+              <reply>
+        <text>Czekolada</text>
+        <postback>CHOOSECHK</postback>
+    </reply>
+              <reply>
+        <text>Czekolada</text>
+        <postback>CHOOSECHK</postback>
+    </reply>
+              <reply>
+        <text>Czekolada</text>
+        <postback>CHOOSECHK</postback>
+    </reply>
+              <reply>
+        <text>Czekolada</text>
+        <postback>CHOOSECHK</postback>
+    </reply>
+              <reply>
+        <text>Czekolada</text>
+        <postback>CHOOSECHK</postback>
+    </reply>
     </template>
     
-    
-    
-    
-    
-    
-    
 </category>
+
+
+
+
+
+
+
 </aiml>
