@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 <category>
-    <pattern>Zaczynamy</pattern> <!-- Polecenie inicjalizujÄce bota -->
-    <template>Witaj nazywam siÄ gaz, w czym mogÄ pomÃ³c?
-    
-    <button>
-        <text>Dane adresowe</text>
-        <postback>ADRES</postback>
-    </button>
+    <postback>_</postback>
+    <pattern>_</pattern> <!-- Polecenie inicjalizujÄce bota -->
+    <delay>1</delay>
+    <template>Witaj nazywam siÄ Gaz.
+    <delay>1</delay>
+    W czym mogÄ pomÃ³c?
+    <delay>1</delay>
+    <reply>
+        <text>Nasz adres</text>
+        <postback>CHOOSEADRES</postback>
+    </reply>
     <reply>
         <text>Informacje o zamÃ³wieniu</text>
-        <postback>ZAMOWIENIE</postback>
+        <postback>CHOOSEZAMOWIENIE</postback>
     </reply>
+    <reply>
+        <text>Organizujesz przyjÄcie?</text>
+        <postback>CHOOSEPRZYJECIE</postback>
+    </reply>
+    <reply>
+        <text>Informacje o zamÃ³wieniu</text>
+        <postback>CHOOSEZAMOWIENIE</postback>
+    </reply>
+    
     </template>
+    
+    
+    
+    
+    
+    
     
 </category>
 </aiml>
