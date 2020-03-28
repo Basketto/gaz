@@ -2,11 +2,125 @@
 <aiml version="2.0">
 <category>
    
-    <pattern>a</pattern> <!-- Polecenie inicjalizujÄce bota -->
+ 
+    <pattern>a</pattern>
+    <!--<pattern>Start</pattern>
+    <pattern>Zacznij</pattern>
+    <pattern>Witaj</pattern>
+    <pattern>CzeÅÄ</pattern>
+    <pattern>Co tam?</pattern>
+     Polecenie inicjalizujÄce bota -->
     <delay>1</delay>
     <template>
-        Witaj nazywam siÄ Gaz ð ð.
+        <random>
+        <li>Witaj nazywam siÄ Gaz ð ð.</li>
+        
+        <li>ðCzeÅÄ jestem Gaz ðð </li>
+        
+        <li>DzieÅ dobry jestem Gaz ð ð.</li>
+        
+        <li>Siema jestem Gaz ð ð.</li>
+        
+    
+</random>
+   
+   
+    
+<random>
     <delay>1</delay>
+ <li><br/> Jak masz na imiÄ?</li>
+    <li><br/> Jak siÄ nazywasz?</li>
+    <li><br/> A ty?</li>
+    <li><br/> A jakie jest Twoje imiÄ?</li>
+</random>
+</template>
+</category>
+
+ <category>
+    <pattern>Mam na imiÄ *</pattern>
+    
+    <template>Witaj <set name="firstname"><star/> </set>
+   <delay>1</delay>
+   <random>
+    <li>W czym mogÄ pomÃ³c?</li>
+    <li>To jak mogÄ Tobie pomÃ³c?</li>
+   <li> Szukasz czegoÅ konkretnego?</li>
+    
+    </random>
+    <delay>1</delay>
+    <reply>
+        <text>Nasz adres</text>
+        <postback>CHOOSEADRES</postback>
+    </reply>
+    <reply>
+        <text>Organizujesz przyjÄcie?</text>
+        <postback>CHOOSEPRZYJECIE</postback>
+    </reply>
+    <reply>
+        <text>Kontakt z czÅowiekiem</text>
+        <postback>CHOOSECZLOWIEK</postback>
+    </reply>
+     <reply>
+        <text>Oferta</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+     <reply>
+        <text>Promocje</text>
+        <postback>CHOOSEPROMO</postback>
+    </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>CHOOSEOFERTA</pattern>
+    <template>
+        <delay>1</delay>
+        Oferujemy szerokÄ gamÄ wyrobÃ³w cukierniczych!
+        <delay>1</delay>
+        Wpisz po prostu to czego szukasz lub moÅ¼e ja Tobie pomogÄ?
+        <reply>
+        <text>PomÃ³Å¼ mi!</text>
+        <postback>CHOOSEHELPER</postback>
+    </reply> 
+    </template>
+</category>
+<category>
+    <pattern>CHOOSECZLOWIEK</pattern>
+    <template>
+        <random>
+        <li><delay>3</delay>
+        Aktualnie nasi konsultanci sÄ zajÄci... </li>
+        <text>wrÃ³c</text>
+        <li><delay>5</delay>
+        Za chwilÄ poÅÄczymy CiÄ z konsultantem.
+        </li></random>
+        
+         <reply>
+        <text>powrÃ³t</text>
+        <postback>b</postback>
+    </reply>
+    
+         <reply>
+        <text>poczekam</text>
+        <postback>CHOOSECZLOWIEK</postback>
+    </reply>
+    
+         </template>
+    
+</category>
+<category>
+    <pattern>Jak mam na imiÄ</pattern>
+    <template>Masz na imiÄ <get name="firstname"/>.
+    </template>
+</category>
+
+
+
+
+<category>
+<pattern>b</pattern>
+    <template>
+        <delay>1</delay>
     W czym mogÄ pomÃ³c?
     <delay>1</delay>
     <reply>
@@ -45,53 +159,141 @@
     </reply> 
     </template>
 </category>
-
+<category>
+    <pattern>CHOOSECZLOWIEK</pattern>
+    <template>
+        <random>
+        <li><delay>3</delay>
+        Aktualnie nasi konsultanci sÄ zajÄci... </li>
+        <text>wrÃ³c</text>
+        <li><delay>5</delay>
+        Za chwilÄ poÅÄczymy CiÄ z konsultantem.
+        </li></random>
+        
+         <reply>
+        <text>powrÃ³t</text>
+        <postback>b</postback>
+    </reply>
+    
+         <reply>
+        <text>poczekam</text>
+        <postback>CHOOSECZLOWIEK</postback>
+    </reply>
+    
+         </template>
+        
+        
+   
+</category>
 <category>
     <pattern>CHOOSEHELPER</pattern>
     <template>
         <delay>1</delay>
-        Jaki smak lubisz?
+        Na co masz ochotÄ?
         <delay>1</delay>
-          <reply>
-        <text>Czekolada</text>
-        <postback>CHOOSECHK</postback>
+    
+    <reply>
+        <text>JakieÅ ciastko</text>
+        <postback>CHOOSE1</postback>
+    </reply>
+   
+    <reply>
+        <text>CoÅ dobrego</text>
+        <postback>CHOOSE2</postback>
+    </reply>
+  
+    <reply>
+        <text>MoÅ¼e lody?</text>
+        <postback>CHOOSE3</postback>
+    </reply>
+    
+    <reply>
+        <text>CoÅ czekoladowego</text>
+        <postback>CHOOSE4</postback>
+    </reply>
+   
+    <reply>
+        <text>Z owocami</text>
+        <postback>CHOOSE5</postback>
+    </reply>
+ 
+    <reply>
+        <text>A moÅ¼e na ciepÅo?</text>
+        <postback>CHOOSE6</postback>
+    </reply>
+  
+    <reply>
+        <text>MaÅa przekÄska</text>
+        <postback>CHOOSE7</postback>
+    </reply>
+    
+   
+    <reply>
+        <text>Nic z tego...</text>
+        <postback>CHOOSE8</postback>
     </reply>
      <reply>
-        <text>Truskawk</text>
-        <postback>CHOOSECHK</postback>
-    </reply>
-              <reply>
-        <text>Czekolada</text>
-        <postback>CHOOSECHK</postback>
-    </reply>
-              <reply>
-        <text>Czekolada</text>
-        <postback>CHOOSECHK</postback>
-    </reply>
-              <reply>
-        <text>Czekolada</text>
-        <postback>CHOOSECHK</postback>
-    </reply>
-              <reply>
-        <text>Czekolada</text>
-        <postback>CHOOSECHK</postback>
-    </reply>
-              <reply>
-        <text>Czekolada</text>
-        <postback>CHOOSECHK</postback>
-    </reply>
-              <reply>
-        <text>Czekolada</text>
-        <postback>CHOOSECHK</postback>
+        <text>powrÃ³t</text>
+        <postback>b</postback>
     </reply>
     </template>
     
 </category>
-
-
-
-
-
-
+<category>
+    <pattern>CHOOSE1</pattern>
+   
+<template>
+      Ok!
+</template>    
+</category>
+<category>
+    <pattern>CHOOSE2</pattern>
+   
+<template>
+      Ok!
+</template>    
+</category>
+<category>
+    <pattern>CHOOSE3</pattern>
+   
+<template>
+      Ok!
+</template>    
+</category>
+<category>
+    <pattern>CHOOSE4</pattern>
+   
+<template>
+      Ok!
+</template>    
+</category>
+<category>
+    <pattern>CHOOSE5</pattern>
+   
+<template>
+      Ok!
+</template>    
+</category>
+<category>
+    <pattern>CHOOSE6</pattern>
+   
+<template>
+      Ok!
+</template>    
+</category>
+<category>
+    <pattern>CHOOSE7</pattern>
+   
+<template>
+      Ok!
+</template>    
+</category>
+<category>
+    <pattern>CHOOSE8</pattern>
+   
+<template>
+      Ok!
+</template>    
+</category>
 
 </aiml>
