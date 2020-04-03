@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+<category>
+    <pattern>CHOOSEADRES</pattern>
+    <template>
+        <delay>2</delay>
+        Nasza cuikiernia znajduje siÄ pod adresem: 
+        <b>ul. Cukiernicza 6/9 
+        21-370 Ciastowo</b>
+        <delay>2</delay>
+        MoÅ¼esz teÅ¼ napisaÄ na nasz adres mailowy:<br/> <b>cukiernia@cukiernia.pl</b> 
+        lub zadzoniÄ pod numer<br/> <b>111-222-333</b>
+        <delay>2</delay>
+        Zapraszam teÅ¼ na naszÄ stronÄ na Facebooku:<br/> <b>facebook.com/cukiernia</b>
+        <image>https://zapodaj.net/images/247cde5568243.png?fbclid=IwAR2thPzPbXn2owmlYlRM4p9AuIOlIDtb0COuhEfsrUP-GkwmW45R5GaHDWg</image>
+            <reply>
+            <text>WrÃ³Ä do poczÄtku</text>
+            <postback>a</postback>
+            </reply> 
+    </template>
+</category>
+
+<category>
+    <pattern>CHOOSEPROMO</pattern>
+    <template>
+        <delay>2</delay>
+        Jakie promocje CiÄ interesujÄ?
+        <image>https://zapodaj.net/images/11d4a1142aed5.png?fbclid=IwAR238m53h5ZUOe31DTMpvmXFYydd92DG8hjnY8EXr2rr3gmzSa6ABXGR4uY</image>
+        <delay>2</delay>
+        <reply>
+        <text>Kody rabatowe</text>
+        <postback>KODY</postback>
+        </reply>
+        <reply>
+        <text>Wielosztuki</text>
+        <postback>WIELOSZTUKI</postback>
+        </reply>
+        <reply>
+        <text>Oferty tygodnia</text>
+        <postback>OFERTYGOD</postback>
+        </reply>
+        <reply>
+        <text>WrÃ³Ä do poczÄtku</text>
+        <postback>a</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>KODY</pattern>
+    <template>
+        Przy skÅadaniu zamÃ³wienia moÅ¼esz uÅ¼yÄ jednego z aktualnych kodÃ³w rabatowych!
+        <image>https://zapodaj.net/images/247cde5568243.png?fbclid=IwAR2thPzPbXn2owmlYlRM4p9AuIOlIDtb0COuhEfsrUP-GkwmW45R5GaHDWg</image>
+        <delay>2</delay>
+        Aktualne kody rabatowe to:<br/>
+        <b>XXXXX</b> - Darmowa dostawa<br/>
+        <b>YYYYY</b> - Darmowy zestaw prÃÂÃÂ³bek
+            <reply>
+            <text>WrÃ³Ä do promocji</text>
+            <postback>CHOOSEPROMO</postback>
+            </reply> 
+    </template>
+</category>
+
+<category>
+    <pattern>WIELOSZTUKI</pattern>
+    <template>
+        Im wiÄcej kupujesz, tym wiÄcej zyskujesz!
+        <image>https://zapodaj.net/images/1807f8f35db30.png?fbclid=IwAR09fZrDgEA82Vi7IkpTiTox_IGtHu29jFP-3EqYPO1kTOtIKHqBN-9LEHk</image>
+        <delay>2</delay>
+        Aktualnie w promocji:
+        <delay>2</delay>
+        <b>Karpatka 2kg za 40zÅ!</b>
+        Cena regularna 25zÅ/kg
+        <b>OszczÄdzasz 10 zÅ!</b>
+        <delay>3</delay>
+        <b>Herbatniki regionalne w czekoladzie 2kg za 50zÅ!</b>
+        Cena regularna 30zÅ/kg
+        <b>OszczÄdzasz 10 zÅ!</b>
+            <reply>
+            <text>WrÃ³Ä do promocji</text>
+            <postback>CHOOSEPROMO</postback>
+            </reply> 
+    </template>
+</category>
+
+<category>
+    <pattern>OFERTYGOD</pattern>
+    <template>
+        W tym tygodniu nasze oferty promocyjne to: <br/>
+        <delay>2</delay>
+        -Sernik z galaretkÄ <b>20zÅ/kg!</b>
+        <delay>1</delay>
+        -JabÅecznik <b>15 zÅ/kg!</b>
+        <delay>1</delay>
+        -Regionalne ciastka maÅlane <b>30 zÅ/kg!</b>
+        <delay>2</delay>
+        <image>https://zapodaj.net/images/1807f8f35db30.png?fbclid=IwAR09fZrDgEA82Vi7IkpTiTox_IGtHu29jFP-3EqYPO1kTOtIKHqBN-9LEHk</image>
+            <reply>
+            <text>WrÃ³Ä do promocji</text>
+            <postback>CHOOSEPROMO</postback>
+            </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>CHOOSEPRZYJECIE</pattern>
+    <template>
+        <delay>2</delay>
+        Szykujesz wiÄksze przyjÄcie?
+        <image>https://zapodaj.net/images/11d4a1142aed5.png?fbclid=IwAR238m53h5ZUOe31DTMpvmXFYydd92DG8hjnY8EXr2rr3gmzSa6ABXGR4uY</image>
+        <delay>2</delay>
+        Postaram siÄ Ci w tym pomÃ³c!
+        <image>https://zapodaj.net/images/1807f8f35db30.png?fbclid=IwAR09fZrDgEA82Vi7IkpTiTox_IGtHu29jFP-3EqYPO1kTOtIKHqBN-9LEHk</image>
+        <delay>2</delay>
+        Na poczÄtek powiedz na jakÄ kwotÄ planujesz zÅoÅ¼yÄ u nas zamÃ³wienie?
+        <image>https://zapodaj.net/images/11d4a1142aed5.png?fbclid=IwAR238m53h5ZUOe31DTMpvmXFYydd92DG8hjnY8EXr2rr3gmzSa6ABXGR4uY</image>
+        <delay>2</delay>
+            <reply>
+            <text>Mniej niÅ¼ 500 zÅ</text>
+            <postback>MALO</postback>
+            </reply>
+            <reply>
+            <text>500 zÅ - 1000 zÅ</text>
+            <postback>SREDNIO</postback>
+            </reply>
+            <reply>
+            <text>Ponad 1000 zÅ</text>
+            <postback>DUZO</postback>
+            </reply>
+            <reply>
+            <text>WrÃ³Ä do poczÄtku</text>
+            <postback>CHOOSEPRZYJECIE</postback>
+            </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>MALO</pattern>
+    <template>
+        <delay>2</delay>
+        Chcesz wyprawiÄ maÅe przyjÄcie i nie braÄ kredytu Å¼eby kupiÄ poczÄstunek?
+        <image>https://zapodaj.net/images/11d4a1142aed5.png?fbclid=IwAR238m53h5ZUOe31DTMpvmXFYydd92DG8hjnY8EXr2rr3gmzSa6ABXGR4uY</image>
+        <delay>2</delay>
+        Polecam przejrzeÄ naszÄ ofertÄ promocyjnÄ.
+        <image>https://zapodaj.net/images/247cde5568243.png?fbclid=IwAR2thPzPbXn2owmlYlRM4p9AuIOlIDtb0COuhEfsrUP-GkwmW45R5GaHDWg</image>
+        <delay>2</delay>
+        Na pewno znajdziesz coÅ dla siebie!
+        <image>https://zapodaj.net/images/1807f8f35db30.png?fbclid=IwAR09fZrDgEA82Vi7IkpTiTox_IGtHu29jFP-3EqYPO1kTOtIKHqBN-9LEHk</image>
+        <delay>2</delay>
+        <reply>
+        <text>Promocje</text>
+        <postback>CHOOSEPROMO</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>SREDNIO</pattern>
+    <template>
+        <delay>2</delay>
+        Na Åredniej wielkoÅci przyjÄcia polecamy naszÄ ofertÄ promocyjnÄ.
+        <image>https://zapodaj.net/images/247cde5568243.png?fbclid=IwAR2thPzPbXn2owmlYlRM4p9AuIOlIDtb0COuhEfsrUP-GkwmW45R5GaHDWg</image>
+        <delay>2</delay>
+        <reply>
+        <text>Promocje</text>
+        <postback>CHOOSEPROMO</postback>
+        </reply>
+        Zapraszam teÅ¼ do naszego sklepu stacjonarnego ;)
+            <reply>
+            <text>Nasz adres</text>
+            <postback>CHOOSEADRES</postback>
+            </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>DUZO</pattern>
+    <template>
+        <delay>2</delay>
+        Planujesz wydaÄ ponad 1000 zÅ? :O To bardzo duÅ¼o.
+        <image>https://zapodaj.net/images/6c01f30137cbd.png?fbclid=IwAR2Jc-0aiFblVeRhBlofFohr-zWjQczxglupdhhsC835r6Z-BTQ9__TbhNY</image>
+        <delay>2</delay>
+        Do takich zamÃ³wieÅ polecam skontaktowaÄ siÄ z naszym przedstawicielem 
+        lub przyjÅÄ do naszego sklepu stacjonarnego.
+        <image>https://zapodaj.net/images/247cde5568243.png?fbclid=IwAR2thPzPbXn2owmlYlRM4p9AuIOlIDtb0COuhEfsrUP-GkwmW45R5GaHDWg</image>
+            <reply>
+            <text>Nasz adres</text>
+            <postback>CHOOSEADRES</postback>
+            </reply>
+    </template>
+</category>
+</aiml>
