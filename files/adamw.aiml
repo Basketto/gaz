@@ -17,7 +17,7 @@
         <image>https://zapodaj.net/images/247cde5568243.png?fbclid=IwAR2thPzPbXn2owmlYlRM4p9AuIOlIDtb0COuhEfsrUP-GkwmW45R5GaHDWg</image>
             <reply>
             <text>WrÃ³Ä do poczÄtku</text>
-            <postback>a</postback>
+            <postback>b</postback>
             </reply> 
     </template>
 </category>
@@ -43,7 +43,7 @@
         </reply>
         <reply>
         <text>WrÃ³Ä do poczÄtku</text>
-        <postback>a</postback>
+        <postback>b</postback>
         </reply>
     </template>
 </category>
@@ -61,6 +61,10 @@
             <text>WrÃ³Ä do promocji</text>
             <postback>CHOOSEPROMO</postback>
             </reply> 
+            <reply>
+            <text>WrÃ³Ä do poczÄtku</text>
+            <postback>b</postback>
+            </reply>
     </template>
 </category>
 
@@ -83,6 +87,10 @@
             <text>WrÃ³Ä do promocji</text>
             <postback>CHOOSEPROMO</postback>
             </reply> 
+            <reply>
+            <text>WrÃ³Ä do poczÄtku</text>
+            <postback>b</postback>
+            </reply>
     </template>
 </category>
 
@@ -101,6 +109,10 @@
             <reply>
             <text>WrÃ³Ä do promocji</text>
             <postback>CHOOSEPROMO</postback>
+            </reply>
+            <reply>
+            <text>WrÃ³Ä do poczÄtku</text>
+            <postback>b</postback>
             </reply>
     </template>
 </category>

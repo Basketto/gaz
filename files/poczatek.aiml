@@ -12,14 +12,15 @@
      Polecenie inicjalizujÄce bota -->
     <delay>1</delay>
     <template>
+       
         <random>
-        <li>Witaj nazywam siÄ Gaz ð ð.</li>
+        <li><image>https://zapodaj.net/images/1807f8f35db30.png</image>Witaj nazywam siÄ Gaz ð ð.</li>
         
-        <li>ðCzeÅÄ jestem Gaz ðð </li>
+        <li><image>https://zapodaj.net/images/1807f8f35db30.png</image>ðCzeÅÄ jestem Gaz ð ð.</li>
         
-        <li>DzieÅ dobry jestem Gaz ð ð.</li>
+        <li><image>https://zapodaj.net/images/1807f8f35db30.png</image>DzieÅ dobry jestem Gaz ð ð.</li>
         
-        <li>Siema jestem Gaz ð ð.</li>
+        <li><image>https://zapodaj.net/images/1807f8f35db30.png</image>Siema jestem Gaz ð ð.</li>
         </random>
    
    
@@ -87,15 +88,13 @@
     <template>
         <random>
         <li><delay>3</delay>
-        Aktualnie nasi konsultanci sÄ zajÄci... </li>
+        Aktualnie nasi konsultanci sÄ zajÄci... 
+        <image>https://zapodaj.net/images/52dd762651430.png</image></li>
         <text>wrÃ³c</text>
+        <postback>b</postback>
         <li><delay>5</delay>
-        Za chwilÄ poÅÄczymy CiÄ z konsultantem.
+        Za chwilÄ poÅÄczÄ CiÄ z konsultantem.
         <delay>5</delay>
-        Podczas oczekiwania moÅ¼esz opisaÄ to co CiÄ trapi ð
-        <delay>5</delay>
-        
-        
         </li></random>
         
          <reply>
@@ -124,6 +123,7 @@
 <pattern>b</pattern>
     <template>
         <delay>1</delay>
+        <image>https://zapodaj.net/images/1807f8f35db30.png</image>
     W czym mogÄ pomÃ³c?
     <delay>1</delay>
     <reply>
@@ -156,6 +156,7 @@
         Oferujemy szerokÄ gamÄ wyrobÃ³w cukierniczych!
         <delay>1</delay>
         Wpisz po prostu to czego szukasz lub moÅ¼e ja Tobie pomogÄ?
+        <image>https://zapodaj.net/images/11d4a1142aed5.png</image>
         <reply>
         <text>PomÃ³Å¼ mi!</text>
         <postback>CHOOSEHELPER</postback>
@@ -192,6 +193,7 @@
     <pattern>CHOOSEHELPER</pattern>
     <template>
         <delay>1</delay>
+        <image>https://zapodaj.net/images/247cde5568243.png</image>
         Na co masz ochotÄ?
         <delay>1</delay>
     
@@ -241,12 +243,19 @@
 <template>
       <random>
           <li>Pyszne ciastko przekÅadane kremem
+          <image>https://zapodaj.net/9b005703454e9.jpg.html</image>
          </li>
            <li>Ciastko waniliowe
+           <image>https://zapodaj.net/7ad7171b167bf.jpg.html</image>
          </li>
            <li>Kruche ciastko z cukrem
+           <image>https://zapodaj.net/e8664f544342a.jpg.html</image>
            </li>
      </random>
+     <reply>
+        <text>powrÃ³t</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
 </template>    
 </category>
 
@@ -257,13 +266,19 @@
    
 <template>
       <random>
-          <li>BajaderkÄ?
+          <li>BajaderkÄ? <image>https://zapodaj.net/b11396fa63fb5.jpg.html</image>
           </li>
            <li>A moÅ¼e pÄczka?
+           <image>https://zapodaj.net/ac5cc8e2cebda.jpg.html</image>
          </li>
            <li>DroÅ¼dÅ¼Ã³wka!
+           <image>https://zapodaj.net/708187334e717.jpg.html</image>
           </li>
      </random>
+     <reply>
+        <text>powrÃ³t</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
 </template>    
 </category>
 
@@ -272,10 +287,14 @@
     <pattern>CHOOSE3</pattern>
    
 <template>
-      <random>
+      
          Mamy lody dostÄpne w 13 smakach dostÄpne na miejscu w kaÅ¼dym z naszych punktÃ³w!
-         </random>
-</template>    
+         <image>https://zapodaj.net/0549c84a47cff.jpg.html</image>
+</template>   
+<reply>
+        <text>powrÃ³t</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
 </category>
 
 
@@ -284,13 +303,23 @@
    
 <template>
       <random>
-          <li>Ciasto brownie
+          <li>Ciasto brownie<image>https://zapodaj.net/c2a7acb8293fd.jpg.html</image>
            </li>
            <li>Tort czekoladowy
+           <image>https://zapodaj.net/dc7e7907da2af.jpg.html</image>
           </li>
            <li>Czekoladowy sernik
+           <image>https://zapodaj.net/bb3150a831bd5.jpg.html</image>
            </li>
      </random>
+     <reply>
+        <text>powrÃ³t</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+    <reply>
+        <text>powrÃ³t</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
 </template>    
 </category>
 <category>
@@ -299,12 +328,23 @@
 <template>
       <random>
           <li>Sernik z owocami
+          <image>https://zapodaj.net/3de7700a59eb3.jpg.html</image>
           </li>
            <li>Tarta czekoladowa z owocami
+           <image>https://zapodaj.net/dea5096951d84.jpg.html</image>
           </li>
            <li>Tort owocowy
+           <image>https://zapodaj.net/936e68b6b9dea.jpg.html</image>
           </li>
      </random>
+     <reply>
+        <text>powrÃ³t</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+    <reply>
+        <text>powrÃ³t</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
 </template>    
 </category>
 
@@ -315,7 +355,38 @@
     <pattern>CHOOSE8</pattern>
    
 <template>
-      Ok!
-</template>    
+     <random>
+          <li>BajaderkÄ? <image>https://zapodaj.net/b11396fa63fb5.jpg.html</image>
+          </li>
+           <li>A moÅ¼e pÄczka?
+           <image>https://zapodaj.net/ac5cc8e2cebda.jpg.html</image>
+         </li>
+           <li>DroÅ¼dÅ¼Ã³wka!
+           <image>https://zapodaj.net/708187334e717.jpg.html</image>
+          </li>
+         <li>Ciasto brownie<image>https://zapodaj.net/c2a7acb8293fd.jpg.html</image>
+           </li>
+           <li>Tort czekoladowy
+           <image>https://zapodaj.net/dc7e7907da2af.jpg.html</image>
+          </li>
+           <li>Czekoladowy sernik
+           <image>https://zapodaj.net/bb3150a831bd5.jpg.html</image>
+           </li>
+          <li>Sernik z owocami
+          <image>https://zapodaj.net/3de7700a59eb3.jpg.html</image>
+          </li>
+           <li>Tarta czekoladowa z owocami
+           <image>https://zapodaj.net/dea5096951d84.jpg.html</image>
+          </li>
+           <li>Tort owocowy
+           <image>https://zapodaj.net/936e68b6b9dea.jpg.html</image>
+          </li>
+     </random>
+      
+     <reply>
+        <text>powrÃ³t</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+  </template>  
 </category>
 </aiml>
