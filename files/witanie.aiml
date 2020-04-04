@@ -5,24 +5,139 @@
 <category>
     <pattern>Jestem *</pattern>
     <template>Witaj <set name="firstname"><star/> </set>
+    <delay>1</delay>
+   
+   <random>
+    <li>W czym mogÄ pomÃ³c?</li>
+    <li>To jak mogÄ Tobie pomÃ³c?</li>
+   <li> Szukasz czegoÅ konkretnego?</li>
+    </random>
+    
+    <delay>1</delay>
+    <reply>
+        <text>Nasz adres</text>
+        <postback>CHOOSEADRES</postback>
+    </reply>
+    <reply>
+        <text>Organizujesz przyjÄcie?</text>
+        <postback>CHOOSEPRZYJECIE</postback>
+    </reply>
+    <reply>
+        <text>Kontakt z czÅowiekiem</text>
+        <postback>CHOOSECZLOWIEK</postback>
+    </reply>
+     <reply>
+        <text>Oferta</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+     <reply>
+        <text>Promocje</text>
+        <postback>CHOOSEPROMO</postback>
+    </reply>
     </template>
 </category>
+    
+
    
 <category>
     <pattern>Nazywam siÄ *</pattern>
-    <template>Witaj <set name="firstname"><star/> </set>
+    <template>Witaj <set name="firstname"><star/> </set> <delay>1</delay>
+   
+   <random>
+    <li>W czym mogÄ pomÃ³c?</li>
+    <li>To jak mogÄ Tobie pomÃ³c?</li>
+   <li> Szukasz czegoÅ konkretnego?</li>
+    </random>
+    
+    <delay>1</delay>
+    <reply>
+        <text>Nasz adres</text>
+        <postback>CHOOSEADRES</postback>
+    </reply>
+    <reply>
+        <text>Organizujesz przyjÄcie?</text>
+        <postback>CHOOSEPRZYJECIE</postback>
+    </reply>
+    <reply>
+        <text>Kontakt z czÅowiekiem</text>
+        <postback>CHOOSECZLOWIEK</postback>
+    </reply>
+     <reply>
+        <text>Oferta</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+     <reply>
+        <text>Promocje</text>
+        <postback>CHOOSEPROMO</postback>
+    </reply>
     </template>
 </category>
 
 <category>
     <pattern>Mam na imiÄ *</pattern>
-    <template>Witaj <set name="firstname"><star/> </set>
+    <template>Witaj <set name="firstname"><star/> </set> <delay>1</delay>
+   
+   <random>
+    <li>W czym mogÄ pomÃ³c?</li>
+    <li>To jak mogÄ Tobie pomÃ³c?</li>
+   <li> Szukasz czegoÅ konkretnego?</li>
+    </random>
+    
+    <delay>1</delay>
+    <reply>
+        <text>Nasz adres</text>
+        <postback>CHOOSEADRES</postback>
+    </reply>
+    <reply>
+        <text>Organizujesz przyjÄcie?</text>
+        <postback>CHOOSEPRZYJECIE</postback>
+    </reply>
+    <reply>
+        <text>Kontakt z czÅowiekiem</text>
+        <postback>CHOOSECZLOWIEK</postback>
+    </reply>
+     <reply>
+        <text>Oferta</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+     <reply>
+        <text>Promocje</text>
+        <postback>CHOOSEPROMO</postback>
+    </reply>
     </template>
 </category>
 
 <category>
     <pattern>Moje imiÄ to *</pattern>
-    <template>Witaj <set name="firstname"><star/> </set>
+    <template>Witaj <set name="firstname"><star/> </set> <delay>1</delay>
+   
+   <random>
+    <li>W czym mogÄ pomÃ³c?</li>
+    <li>To jak mogÄ Tobie pomÃ³c?</li>
+   <li> Szukasz czegoÅ konkretnego?</li>
+    </random>
+    
+    <delay>1</delay>
+    <reply>
+        <text>Nasz adres</text>
+        <postback>CHOOSEADRES</postback>
+    </reply>
+    <reply>
+        <text>Organizujesz przyjÄcie?</text>
+        <postback>CHOOSEPRZYJECIE</postback>
+    </reply>
+    <reply>
+        <text>Kontakt z czÅowiekiem</text>
+        <postback>CHOOSECZLOWIEK</postback>
+    </reply>
+     <reply>
+        <text>Oferta</text>
+        <postback>CHOOSEOFERTA</postback>
+    </reply>
+     <reply>
+        <text>Promocje</text>
+        <postback>CHOOSEPROMO</postback>
+    </reply>
     </template>
 </category>
 
