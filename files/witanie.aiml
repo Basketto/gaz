@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+<category>
+    <pattern>Jestem *</pattern>
+    <template>Witaj <set name="firstname"><star/> </set>
+    </template>
+</category>
+   
+<category>
+    <pattern>Nazywam siÄ *</pattern>
+    <template>Witaj <set name="firstname"><star/> </set>
+    </template>
+</category>
+
+<category>
+    <pattern>Mam na imiÄ *</pattern>
+    <template>Witaj <set name="firstname"><star/> </set>
+    </template>
+</category>
+
+<category>
+    <pattern>Moje imiÄ to *</pattern>
+    <template>Witaj <set name="firstname"><star/> </set>
+    </template>
+</category>
+
+<category>
+    <pattern>CzeÅÄ</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Czesc</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Siema</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Siemka</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Witaj</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Witam</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>DzieÅ dobry</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Dobry wieczÃ³r</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Hejka</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Siemandero</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Hello</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Hi</pattern>
+    <template><srai>a</srai></template>
+</category>
+<category>
+    <pattern>Hey</pattern>
+    <template><srai>a</srai></template>
+</category>
+</aiml>

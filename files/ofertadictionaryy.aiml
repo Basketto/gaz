@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+
+
+<category>
+    <pattern>Mam ochotÄ na ciastko</pattern>
+    <template><srai>CHOOSE1</srai></template>
+</category>
+<category>
+    <pattern>_ciastko</pattern>
+    <template><srai>CHOOSE1</srai></template>
+</category>
+<category>
+    <pattern>_ciastka</pattern>
+    <template><srai>CHOOSE1</srai></template>
+</category>
+<category>
+    <pattern>_ciacho</pattern>
+    <template><srai>CHOOSE1</srai></template>
+</category>
+<category>
+    <pattern>_ciasteczko</pattern>
+    <template><srai>CHOOSE1</srai></template>
+</category>
+<category>
+    <pattern>_ciastka</pattern>
+    <template><srai>CHOOSE1</srai></template>
+</category>
+<category>
+    <pattern>_ciastek</pattern>
+    <template><srai>CHOOSE1</srai></template>
+</category>
+<category>
+    <pattern>_ pÄczka ^</pattern>
+    <template><srai>choosepaczek</srai></template>
+</category>
+<category>
+    <pattern>_ pÄczki ^</pattern>
+    <template><srai>choosepaczek</srai></template>
+</category>
+<category>
+    <pattern>_ pÄczek ^</pattern>
+    <template><srai>choosepaczek</srai></template>
+</category>
+<category>
+    <pattern>_ paczki ^</pattern>
+    <template><srai>choosepaczek</srai></template>
+</category>
+<category>
+    <pattern>_ paczka ^</pattern>
+    <template><srai>choosepaczek</srai></template>
+</category>
+<category>
+    <pattern>_ paczek ^</pattern>
+    <template><srai>choosepaczek</srai></template>
+</category>
+<category>
+    <pattern>_ droÅ¼dzÃ³wkÄ ^</pattern>
+    <template><srai>choosebulachoosebula</srai></template>
+</category>
+<category>
+    <pattern>_ drozdzowki ^</pattern>
+    <template><srai>choosebula</srai></template>
+</category>
+<category>
+    <pattern>_ drozdzowke ^</pattern>
+    <template><srai>choosebula</srai></template>
+</category>
+<category>
+    <pattern>_ drozdzowka ^</pattern>
+    <template><srai>choosebula</srai></template>
+</category>
+<category>
+    <pattern>_ droÅ¼dzÃ³wki ^</pattern>
+    <template><srai>choosebula</srai></template>
+</category>
+<category>
+    <pattern>_ droÅ¼dzÃ³wka ^</pattern>
+    <template><srai>choosebula</srai></template>
+</category>
+<category>
+    <pattern>_lody</pattern>
+    <template><srai>CHOOSE3</srai></template>
+</category>
+<category>
+    <pattern>_loda</pattern>
+    <template><srai>CHOOSE3</srai></template>
+</category>
+<category>
+    <pattern>_lodÃ³w</pattern>
+    <template><srai>CHOOSE3</srai></template>
+</category>
+<category>
+    <pattern>_czekolda</pattern>
+    <template><srai>CHOOSE4</srai></template>
+</category>
+<category>
+    <pattern>_czekoladowe</pattern>
+    <template><srai>CHOOSE4</srai></template>
+</category>
+<category>
+    <pattern>_czekoladowego</pattern>
+    <template><srai>CHOOSE4</srai></template>
+</category>
+<category>
+    <pattern>_czekolady</pattern>
+    <template><srai>CHOOSE4</srai></template>
+</category>
+<category>
+    <pattern>_owocami</pattern>
+    <template><srai>CHOOSE5</srai></template>
+</category>
+<category>
+    <pattern>_owocowego</pattern>
+    <template><srai>CHOOSE5</srai></template>
+</category>
+<category>
+    <pattern>_owoce</pattern>
+    <template><srai>CHOOSE5</srai></template>
+</category>
+</aiml>
