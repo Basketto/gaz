@@ -119,4 +119,91 @@
     <pattern>_owoce</pattern>
     <template><srai>CHOOSE5</srai></template>
 </category>
+
+<category>
+    <pattern>AIML MATCH FAIL *</pattern>
+    <template>
+        <random>
+        <li>Nie rozumiem...
+        <image>https://zapodaj.net/images/11d4a1142aed5.png</image></li>
+        <li>MoÅ¼esz powtÃ³rzyÄ?
+        <image>https://zapodaj.net/images/11d4a1142aed5.png</image></li>
+        <li>Tego nie wiem
+        <image>https://zapodaj.net/images/52dd762651430.png</image></li>
+        <li>Moi twÃ³rcy nie zaprogramowali mnie do tego...
+        <image>https://zapodaj.net/images/52dd762651430.png</image></li>
+        </random></template>
+</category>
+
+<category>
+    <pattern>fuck you</pattern>
+    <template>
+        <random>
+        <li>Ale nie przeklinaj tutaj!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>No chyba tak nie wolno!?
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>Ale proszÄ CiÄ!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>JesteÅ zÅym czÅowiekiem!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        </random></template>
+</category>
+
+<category>
+    <pattern>_ kurwa ^</pattern>
+    <template>
+        <random>
+        <li>Ale nie przeklinaj tutaj!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>No chyba tak nie wolno!?
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>Ale proszÄ CiÄ!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>JesteÅ zÅym czÅowiekiem!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        </random></template>
+</category>
+<category>
+    <pattern>_ chuj ^</pattern>
+    <template>
+        <random>
+        <li>Ale nie przeklinaj tutaj!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>No chyba tak nie wolno!?
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>Ale proszÄ CiÄ!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>JesteÅ zÅym czÅowiekiem!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        </random></template>
+</category>
+<category>
+    <pattern>_ kurwo ^</pattern>
+    <template>
+        <random>
+        <li>Ale nie przeklinaj tutaj!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>No chyba tak nie wolno!?
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>Ale proszÄ CiÄ!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>JesteÅ zÅym czÅowiekiem!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        </random></template>
+</category>
+<category>
+    <pattern>_ japierdole ^</pattern>
+    <template>
+        <random>
+        <li>Ale nie przeklinaj tutaj!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>No chyba tak nie wolno!?
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>Ale proszÄ CiÄ!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        <li>JesteÅ zÅym czÅowiekiem!
+        <image>https://zapodaj.net/images/3e2df3b7c14dc.png</image></li>
+        </random></template>
+</category>
 </aiml>
