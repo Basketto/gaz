@@ -67,6 +67,10 @@
         <text>Promocje</text>
         <postback>CHOOSEPROMO</postback>
     </reply>
+    <reply>
+        <text>ZamÃ³wienie</text>
+        <postback>CHOOSEORDER</postback>
+    </reply>
     </template>
 </category>
 
@@ -113,7 +117,10 @@
 <category>
     <pattern>Jak mam na imiÄ</pattern>
     <template>Masz na imiÄ <get name="firstname"/>.
-    </template>
+    <reply>
+        <text>Super!</text>
+        <postback>b</postback>
+    </reply></template>
 </category>
 
 
@@ -145,6 +152,10 @@
      <reply>
         <text>Promocje</text>
         <postback>CHOOSEPROMO</postback>
+    </reply>
+    <reply>
+        <text>ZamÃ³wienie</text>
+        <postback>CHOOSEORDER</postback>
     </reply>
     </template>
 </category>

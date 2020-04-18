@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+    <pattern>CHOOSEORDER</pattern>
+    <template>
+        <carousel>
+            <card>
+                <image>https://bit.ly/3dVAk2Q</image>
+                <title>Ciastko waniliowe</title>
+                
+                <button>
+                    <reply>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART</postback>
+                </reply>
+                </button>
+                
+            </card>
+            <card>
+                <image>https://bit.ly/2V5FeS2</image>
+                <title>Kruche ciastko z cukrem</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART1</postback>
+                </button>
+            </card>
+            <card>
+                <image>https://bit.ly/39GLmpj</image>
+                <title>Sernik z owocami</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART2</postback>
+                </button>
+            </card>
+            <card>
+                <image>https://bit.ly/2JAWw4g</image>
+                <title>Tarta czekoladowa z owocami</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART3</postback>
+                </button>
+            </card>
+            <card>
+                <image>https://bit.ly/2UKI9kt</image>
+                <title>Tort owocowy</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART4</postback>
+                </button>
+            </card>
+            <card>
+                <image>https://bit.ly/34b7nLV</image>
+                <title>Ciasto brownie</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART5</postback>
+                </button>
+            </card>
+            <card>
+                <image>https://bit.ly/2R91Os3</image>
+                <title>Tort czekoladowy</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART6</postback>
+                </button>
+            </card>
+            <card>
+                <image>https://bit.ly/34bCNBS</image>
+                <title>Czekoladowy sernik</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART7</postback>
+                </button>
+            </card>
+           
+            <card>
+                <image>https://bit.ly/348ip4g</image>
+                <title>Bajaderka</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART8</postback>
+                </button>
+            </card>
+            <card>
+                <image>https://bit.ly/2V1X1JV</image>
+                <title>PÄczek</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART9</postback>
+                </button>
+            </card>
+            <card>
+                <image>https://bit.ly/2UHg519</image>
+                <title>DroÅ¼dÅ¼Ã³wka</title>
+                <button>
+                    <text>ZamÃ³w</text>
+                    <postback>ADDTOCART10</postback>
+                </button>
+            </card>
+         
+        </carousel>
+    </template>
+</category>
+
+ 
+
+   <category>
+	       <pattern>ADDTOCART</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow">
+              <random>
+                  <li>ciastko waniliowe</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                 <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+                
+                
+            
+        </template>
+    </category>
+    
+    
+    
+       <category>
+	       <pattern>ADDTOCART1</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow1">
+              <random>
+                  <li>Kruche ciastko z cukrem</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow1"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+    <category>
+	       <pattern>ADDTOCART2</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow2">
+              <random>
+                  <li>Sernik z owocami</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow2"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+    
+        <category>
+	       <pattern>ADDTOCART3</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow3">
+              <random>
+                  <li>Tarta czekoladowa z owocami</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow3"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+    
+    
+    
+    <category>
+	       <pattern>ADDTOCART4</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow4">
+              <random>
+                  <li>Tort owocowy</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow4"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+    
+    
+    <category>
+	       <pattern>ADDTOCART5</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow5">
+              <random>
+                  <li>Ciasto brownie</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow5"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+    
+    
+     <category>
+	       <pattern>ADDTOCART6</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow6">
+              <random>
+                  <li>Tort czekoladowy</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow6"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+     <category>
+	       <pattern>ADDTOCART7</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow7">
+              <random>
+                  <li>Czekoladowy sernik</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow7"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+    
+    
+     <category>
+	       <pattern>ADDTOCART8</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow8">
+              <random>
+                  <li>Bajaderka</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow8"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+    
+    
+     <category>
+	       <pattern>ADDTOCART9</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow9">
+              <random>
+                  <li>PÄczek</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow9"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+     <category>
+	       <pattern>ADDTOCART10</pattern>
+        <template>
+            <think>
+            <set name = "ciastkow10">
+              <random>
+                  <li>DroÅ¼dÅ¼Ã³wka</li>
+              </random>  
+              </set>
+              </think>
+                
+            Chcesz zamÃ³wiÄ <get name = "ciastkow10"/>?
+            <reply>
+                    <text>TAK</text>
+                    <postback>CHOOSEORDER1</postback>
+                </reply>
+                
+                <reply>
+                    <text>NIE</text>
+                    <postback>CHOOSEORDER</postback>
+                </reply>
+                <reply>
+                    <text>WrÃ³Ä do poczÄtku</text>
+                    <postback>b</postback>
+                </reply>
+        </template>
+    </category>
+    
+    
+    
+    <category>
+        <pattern>CHOOSEORDER1</pattern>
+        <template>
+        Dodano do koszyka!
+        <delay>1</delay>
+        
+        <srai>CHOOSEORDER</srai>
+        </template>
+    </category>
+    
+ 
+
+
+</aiml>
+
+<!--MoÅ¼esz przejeÅÄ do wyboru naszej oferty lub wpisaÄ to czego potrzebujesz!!
+        <reply>
+            <text>Oferta</text>
+            <postback>CHOOSEHELPER</postback>
+        </reply>
+        <reply>
+            <text>WrÃ³Ä do poczÄtku</text>
+            <postback>b</postback>
+        </reply>-->
